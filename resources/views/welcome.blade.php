@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>CFS</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -16,7 +17,7 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato', sans-serif;
+                font-family: 'Lato';
             }
 
             .container {
@@ -31,15 +32,23 @@
             }
 
             .title {
-                font-size: 96px;
+                font-size: 150px;
+				font-weight: bold;
+				color:orange;
             }
+			
+			a {
+				font-weight: bold;
+				color:blue;
+			}
         </style>
     </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
+    <body background="CFS.jpeg" >
+    <div class="container">
+	    <div class="content">
+                <div class="title">Customer Financial Services</div>
+                <a href="http://customerfinancialsystem.herokuapp.com/customers" class="btn btn-primary"><h1>Enter Here</h1></a>
         </div>
+    </div>	
     </body>
 </html>
