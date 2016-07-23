@@ -18,6 +18,19 @@
         </tr>
         </thead>
         <tbody>
+		
+		<script>
+
+			function ConfirmDelete()
+				{
+					var x = confirm("Are you sure you want to delete? Click confirm to continue");
+					if (x)
+					return true;
+					else
+					return false;
+				}
+		</script>
+		
         @foreach ($stocks as $stock)
             <tr>
                 <td>{{ $stock->customer->cust_number }}</td>
@@ -30,7 +43,7 @@
                 <td><a href="{{url('stocks',$stock->id)}}" class="btn btn-primary">Read</a></td>
                 <td><a href="{{route('stocks.edit',$stock->id)}}" class="btn btn-warning">Update</a></td>
                 <td>
-                    {!! Form::open(['method' => 'DELETE', 'route'=>['stocks.destroy', $stock->id]]) !!}
+                    {!! Form::open(['method' => 'DELETE', 'route'=>['stocks.destroy', $stock->id],'onsubmit' => 'return ConfirmDelete()']) !!}
                     {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                     {!! Form::close() !!}
                 </td>
