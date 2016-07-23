@@ -47,7 +47,7 @@
     <div class="container">
 	    <div class="content">
                 <div class="title">Customer Financial Services</div>
-                <a href="http://efs-app.herokuapp.com/customers" class="btn btn-primary"><h1>Enter Here</h1></a>
+                <a href="http://customerfinancialsystem.herokuapp.com/customers" class="btn btn-primary"><h1>Enter Here</h1></a>
         </div>
     </div>	
     </body>
