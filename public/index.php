@@ -1,58 +1,54 @@
-<?php
 
-/**
- * Laravel - A PHP Framework For Web Artisans
- *
- * @package  Laravel
- * @author   Taylor Otwell <taylorotwell@gmail.com>
- */
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CFS</title>
 
-/*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
-| into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels nice to relax.
-|
-*/
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-require __DIR__.'/../bootstrap/autoload.php';
+        <style>
+            html, body {
+                height: 100%;
+            }
 
-/*
-|--------------------------------------------------------------------------
-| Turn On The Lights
-|--------------------------------------------------------------------------
-|
-| We need to illuminate PHP development, so let us turn on the lights.
-| This bootstraps the framework and gets it ready for use, then it
-| will load up this application so that we can run it and send
-| the responses back to the browser and delight our users.
-|
-*/
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato';
+            }
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+            .container {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
 
-/*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
-|
-| Once we have the application, we can handle the incoming request
-| through the kernel, and send the associated response back to
-| the client's browser allowing them to enjoy the creative
-| and wonderful application we have prepared for them.
-|
-*/
+            .content {
+                text-align: center;
+                display: inline-block;
+            }
 
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
-
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
-
-$response->send();
-
-$kernel->terminate($request, $response);
+            .title {
+                font-size: 150px;
+				font-weight: bold;
+				color:orange;
+            }
+			
+			a {
+				font-weight: bold;
+				color:blue;
+			}
+        </style>
+    </head>
+    <body background="CFS.jpeg" >
+    <div class="container">
+	    <div class="content">
+                <div class="title">Customer Financial Services</div>
+                <a href="http://efs-app.herokuapp.com/customers" class="btn btn-primary"><h1>Enter Here</h1></a>
+        </div>
+    </div>	
+    </body>
+</html>
